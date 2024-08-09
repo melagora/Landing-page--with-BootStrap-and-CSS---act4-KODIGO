@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <nav class="pt-4 pb-3 px-4">
+      <nav class="pt-4 pb-3 px-4" id="home">
         <div class="row justify-content-between">
           <div class="col-3">
             <a class="navbar-brand" href="#">
@@ -24,13 +24,13 @@
           <div class="col-auto mx-1">
             <ul class="nav nav-underline">
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="#team">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sign In</a>
+                <a class="nav-link" href="#signin">Sign In</a>
               </li>
             </ul>
             <!-- <a class="navbar-brand mx-2" href="#">Features</a>
@@ -57,15 +57,17 @@
         </p>
         <p class="subtittle-header text-center px-5">Entonces, ¿a que horas te veré el Domingo? JAJAJA :p</p>
         <div class="text-center">
-          <button type="button" class="btn rounded-pill fw-bold btn-info">
-            Get Started
-          </button>
+          <a href="#features">
+            <button type="button" class="btn-header btn rounded-pill fw-bold btn-info">
+              Get Started
+            </button>
+          </a>
         </div>
       </div>
     </header>
     <main>
       <section class="container text-center py-5">
-        <div class="row row-cols-1 mx-auto">
+        <div class="row row-cols-1 mx-auto" id="features">
           <div class="col">
             <img
               src="/img/icon-access-anywhere.svg"
@@ -151,7 +153,7 @@
         </div>
       </section>
 
-      <section class="px-4">
+      <section class="px-4" id="team">
         <img src="/img/bg-quotes.png" alt="" width="40" class="ps-2" />
         <div class="card w-100 mb-4 border-0">
           <div class="card-body d-flex">
@@ -224,7 +226,7 @@
       </section>
 
       <section>
-        <div class="correo text-center mx-auto">
+        <div class="correo text-center mx-auto" id="signin">
           <p class="fw-bold fs-5">Get early access today</p>
           <p>
             It only takes a minute to sign up and our free starter tier is
@@ -241,12 +243,11 @@
             />
           </div>
           <div>
-            <button
-              type="button"
-              class="btn-correo border-0 rounded-pill fw-bold btn-info"
-            >
-              Get Started For Free
-            </button>
+            <a href="#home">
+              <button type="button" class="btn-correo btn rounded-pill fw-bold btn-info">
+                Get Started For Free
+              </button>
+            </a>
           </div>
         </div>
       </section>

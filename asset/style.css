@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #181e2a;
     color: white;
@@ -11,11 +15,15 @@ header {
     font-size: 15px;
 }
 
-.btn {
+.btn-header {
     height: 50px;
     width: 240px;
     color: white;
     background-image: linear-gradient(to right, #50c9d2, #40afd0);
+
+    &&:hover{
+        transform: scale(1.05);
+    }
 }
 
 .nav-item a{
@@ -81,6 +89,10 @@ main .card-body {
     width: 280px;
     color: white;
     background-image: linear-gradient(to right, #50c9d2, #40afd0);
+
+    &&:hover{
+        transform: scale(1.05);
+    }
 }
 
 .imput-correo{
