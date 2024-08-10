@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <nav class="pt-4 pb-3 px-4" id="home">
+      <nav class="navbard" id="home">
         <div class="row justify-content-between">
           <div class="col-3">
             <a class="navbar-brand" href="#">
@@ -42,20 +42,23 @@
       <div class="pb-5">
         <img
           src="/img/illustration-intro.png"
-          class="rounded mx-auto d-block"
+          class="image-header rounded mx-auto d-block"
           alt=""
           height="250"
           width="325"
         />
-        <p class="tittle-header text-center fw-bold fs-2 px-4 pt-5 pb-2">
-          All your files in one secure location, accessible anywhere.
-        </p>
-        <p class="subtittle-header text-center px-5">
-          Fylo stores all your most important files in one secure location.
-          Access them wherever you need, share and collaborate with friends
-          family, and co-workers.
-        </p>
-        <p class="subtittle-header text-center px-5">Entonces, ¿a que horas te veré el Domingo? JAJAJA :p</p>
+        <div class="text-header">
+          <p class="tittle-header text-center fw-bold fs-2 px-4 pt-5 pb-2">
+            All your files in one secure location, accessible anywhere.
+          </p>
+          <p class="subtittle-header text-center px-5">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers.
+          </p>
+          <p class="subtittle-header text-center px-5">Entonces, ¿a que horas te veré el Domingo? JAJAJA :p</p>
+        </div>
+
         <div class="text-center">
           <a href="#features">
             <button type="button" class="btn-header btn rounded-pill fw-bold btn-info">
@@ -67,11 +70,11 @@
     </header>
     <main>
       <section class="container text-center py-5">
-        <div class="row row-cols-1 mx-auto" id="features">
+        <div class="row features row-cols-1 row-cols-md-2" id="features">
           <div class="col">
             <img
               src="/img/icon-access-anywhere.svg"
-              class="rounded mx-auto d-block pb-3"
+              class="rounded mx-auto d-block pb-4"
               alt="..."
             />
             <p class="fw-bold fs-5">Access your files, anywhere</p>
@@ -121,19 +124,17 @@
         </div>
       </section>
 
-      <section class="container text-center py-5">
-        <div class="row row-cols-1 mx-auto">
-          <div class="col">
+      <section class="container text-start py-5">
+        <div class="row row-cols-1 row-cols-md-2 mx-auto">
+          <div class="col img-productive">
             <img
               src="/img/illustration-intro.png"
-              class="rounded mx-auto d-block"
+              class="mx-auto d-block"
               alt=""
-              height="250"
-              width="325"
             />
           </div>
           <div class="col">
-            <p class="fw-bold fs-5 pt-3">Stay productive, wherever you are</p>
+            <p class="text-productive fw-bold pt-3">Stay productive, wherever you are</p>
             <div class="text-start">
               <p>
                 Never let location be an issue when accessing your files. Fylo
@@ -154,10 +155,14 @@
       </section>
 
       <section class="px-4" id="team">
-        <img src="/img/bg-quotes.png" alt="" width="40" class="ps-2" />
-        <div class="card w-100 mb-4 border-0">
-          <div class="card-body d-flex">
-            <div class="pt-3">
+        <div class="quotes">
+          <img src="/img/bg-quotes.png" alt="" class="ps-4 pb-1" />
+        </div>
+        <div class="row team row-cols-1 row-cols-md-3 justify-content-center">
+          <div class="row">
+        <div class=" mb-4 border-0">
+          <div class="card-body">
+            <div class="p-3">
               <p class="card-text">
                 Fylo has improved our team productivity by an order of
                 magnitude. Since making the switch our team has become a
@@ -169,7 +174,7 @@
                     <img src="/img/profile-1.jpg" alt="Image" />
                   </div>
                 </div>
-                <div class="col-8">
+                <div class="col-7">
                   <p class="fw-bold">Satish Patel</p>
                   <p class="subtittle-card">Founder & CEO. Huddle</p>
                 </div>
@@ -177,52 +182,57 @@
             </div>
           </div>
         </div>
-
-        <div class="card w-100 mb-4 border-0">
-          <div class="card-body d-flex">
-            <div class="pt-3">
-              <p class="card-text">
-                Fylo has improved our team productivity by an order of
-                magnitudes Since making the switch our team has become a
-                well-oiled collaboration machine.
-              </p>
-              <div class="row justify-content-start">
-                <div class="col">
-                  <div class="circle-img">
-                    <img src="/img/profile-2.jpg" alt="Image" />
+          </div>
+          <div class="row">
+            <div class=" mb-4 border-0">
+              <div class="card-body">
+                <div class="p-3">
+                  <p class="card-text">
+                    Fylo has improved our team productivity by an order of
+                    magnitudes Since making the switch our team has become a
+                    well-oiled collaboration machine.
+                  </p>
+                  <div class="row justify-content-start">
+                    <div class="col">
+                      <div class="circle-img">
+                        <img src="/img/profile-2.jpg" alt="Image" />
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <p class="fw-bold">Bruce McKenzie</p>
+                      <p class="subtittle-card">Founder & CEO. Huddle</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-8">
-                  <p class="fw-bold">Bruce McKenzie</p>
-                  <p class="subtittle-card">Founder & CEO. Huddle</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" mb-4 border-0">
+              <div class="card-body">
+                <div class="p-3">
+                  <p class="card-text">
+                    Fylo has improved our team productivity by an order of
+                    magnitude. Since making the switch our team has become a
+                    well-oiled collaboration machine.
+                  </p>
+                  <div class="row justify-content-start">
+                    <div class="col">
+                      <div class="circle-img">
+                        <img src="/img/profile-3.jpg" alt="Image" />
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <p class="fw-bold">Iva Boyd</p>
+                      <p class="subtittle-card">Founder & CEO. Huddle</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="card w-100 mb-4 border-0">
-          <div class="card-body d-flex">
-            <div class="pt-3">
-              <p class="card-text">
-                Fylo has improved our team productivity by an order of
-                magnitude. Since making the switch our team has become a
-                well-oiled collaboration machine.
-              </p>
-              <div class="row justify-content-start">
-                <div class="col">
-                  <div class="circle-img">
-                    <img src="/img/profile-3.jpg" alt="Image" />
-                  </div>
-                </div>
-                <div class="col-8">
-                  <p class="fw-bold">Iva Boyd</p>
-                  <p class="subtittle-card">Founder & CEO. Huddle</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section>
@@ -233,21 +243,27 @@
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
-          <div class="contenedor-email">
-            <input
-              type="email"
-              class="mx-auto imput-correo form-control rounded-pill"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="email@example.com"
-            />
-          </div>
-          <div>
-            <a href="#home">
-              <button type="button" class="btn-correo btn rounded-pill fw-bold btn-info">
-                Get Started For Free
-              </button>
-            </a>
+          <div class="emailrow row team row-cols-1 row-cols-md-2">
+            <div class="row">
+              <div class="contenedor-email">
+                <input
+                  type="email"
+                  class="mx-auto imput-correo form-control rounded-pill"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="email@example.com"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="contenedor-email-button">
+                <a href="#home">
+                  <button type="button" class="btn-correo btn rounded-pill fw-bold btn-info">
+                    Get Started For Free
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -255,7 +271,7 @@
 
     <footer>
       <div class="container">
-        <div class="row row-cols-1 row-cols-lg-5 g-2 g-lg-3">
+        <div class="row row-cols-1 row-cols-md-4 g-2 g-lg-3">
           <div class="col">
             <div class="p-3">
               <img src="/img/logo.svg" alt="logo" width="200" height="70" />
@@ -275,22 +291,23 @@
               <img src="/img/icon-email.svg" alt="" class="icon pt-4 ps-3">
               <p class="pt-3">example@fylo.com</p>
           </div>
+        </div>
           </div>
           <div class="col">
             <div class="p-3">
               <div class="container text-start">
                 <div class="row">
-                  <div class="col-6 col-sm-3">About Us</div>
-                  <div class="col-6 col-sm-3">Jobs</div>
-                  <div class="col-6 col-sm-3">Press</div>
-                  <div class="col-6 col-sm-3">Blog</div>
+                  <div class="col-6 ">About Us</div>
+                  <div class="col-6 ">Jobs</div>
+                  <div class="col-6 ">Press</div>
+                  <div class="col-6 ">Blog</div>
               
                   <!-- Force next columns to break to new line -->
                   <div class="w-100"></div>
               
-                  <div class="col-6 col-sm-3">Contact Us</div>
-                  <div class="col-6 col-sm-3">Terms</div>
-                  <div class="col-6 col-sm-3">Privacy</div>
+                  <div class="col-6 ">Contact Us</div>
+                  <div class="col-6 ">Terms</div>
+                  <div class="col-6 ">Privacy</div>
                 </div>
               </div>
             </div>
@@ -308,7 +325,6 @@
               </a>
             </div>
           </div>
-        </div>
       </div>
     </footer>
     <script
